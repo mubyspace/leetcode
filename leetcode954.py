@@ -18,7 +18,6 @@ class Solution:
         return True
 
 
-
 if __name__ == '__main__':
     s = Solution()
     print(s.canReorderDoubled([2, 4, 0, 0, 8, 1]))
