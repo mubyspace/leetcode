@@ -9,6 +9,9 @@ class Solution:
             step, tmp, next = 0, ans, ans + 1
             while tmp <= n:
                 step += min(next, n + 1) - tmp
+                for i in range(tmp, min(tmp+step, n)):
+                    print(i)
+                # print(tmp, min(tmp+step, n))
                 next *= 10
                 tmp *= 10
             if step <= k:
@@ -22,4 +25,4 @@ class Solution:
 
 if __name__ == '__main__':
     s = Solution()
-    print(s.findKthNumber(13, 2))
+    print(s.findKthNumber(13, 13))
